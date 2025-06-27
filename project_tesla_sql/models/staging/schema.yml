@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_tesla_vehicles
+    description: "Cleaned and standardized Tesla vehicle data"
+    columns:
+      - name: vin
+        description: "Vehicle Identification Number"
+        tests:
+          - not_null
+      - name: model
+        description: "Tesla model code"
+      - name: year
+        description: "Model year"
+        tests:
+          - positive_value
+      - name: price
+        description: "Vehicle price"
+        tests:
+          - positive_value
+      - name: odometer
+        description: "Vehicle odometer reading"
+        tests:
+          - positive_value
+      - name: country
+        description: "Country where vehicle is located"
+      - name: had_accident
+        description: "Flag indicating if vehicle had an accident"
+      - name: delivery_date
+        description: "Original delivery date"
+      - name: warranty_expiry_date
+        description: "Battery warranty expiration date"

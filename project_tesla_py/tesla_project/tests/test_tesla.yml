@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_tesla_data
+    tests:
+      - dbt_expectations.expect_column_to_exist:
+          column_name: trim_name
+      - not_null:
+          column_name: trim_name

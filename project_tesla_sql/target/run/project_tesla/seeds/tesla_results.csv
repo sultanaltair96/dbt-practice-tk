@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "tesla_project"."main"."tesla_results" ("country" text,"trim_name" text,"in_transit" boolean,"cpo_refurbishment_status" text,"city" text,"country_code" text,"country_of_origin" text,"model" text,"year" integer,"vin" text,"price" varchar,"color" text,"original_delivery_date" timestamp without time zone,"odometer" varchar,"title_sub_type" text,"vrl_name" text,"battery_warranty_exp_date" timestamp without time zone,"warranty_battery_is_expired" boolean,"vehicle_history" text,"odometer_type" text,"current_time" timestamp without time zone)
+  ;
+    -- dbt seed --
+    
+          COPY "tesla_project"."main"."tesla_results" FROM 'C:\Users\tanis\dbt-practice-tk\dbt-practice-tk\project_tesla_sql\seeds\tesla_results.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

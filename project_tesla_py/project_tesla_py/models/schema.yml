@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: tesla_transform
+    description: "Python model for Tesla data transformation"
+    config:
+      materialized: table
+    
+  - name: tesla_analysis
+    description: "Python model for Tesla data analysis"
+    config:
+      materialized: table

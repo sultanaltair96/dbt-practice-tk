@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: tesla_analysis
+    description: "Tesla vehicle analysis with country and model statistics"
+    columns:
+      - name: analysis_type
+        description: "Type of analysis - country_stats or model_analysis"
+      - name: dimension
+        description: "Country or model being analyzed"
+      - name: count
+        description: "Count of vehicles"
+      - name: avg_price
+        description: "Average price"
+      - name: min_price
+        description: "Minimum price"
+      - name: max_price
+        description: "Maximum price"
+      - name: avg_odometer
+        description: "Average odometer reading"
+      - name: vehicles_with_accidents
+        description: "Count of vehicles with accidents"
+      - name: accident_percentage
+        description: "Percentage of vehicles with accidents"
+      - name: trim_name
+        description: "Model trim name"
+        
+  - name: tesla_vehicles_incremental
+    description: "Incremental model of Tesla vehicles that only processes new data since last run"
+    columns:
+      - name: vin
+        description: "Vehicle Identification Number"
+      - name: model
+        description: "Tesla model code"
+      - name: price
+        description: "Vehicle price"
+      - name: had_accident
+        description: "Flag indicating if vehicle had an accident"
+        
+  - name: tesla_price_trends
+    description: "Analysis of Tesla price trends by country, model, and year"
+    columns:
+      - name: country
+        description: "Country where vehicle is located"
+      - name: model
+        description: "Tesla model code"
+      - name: trim_name
+        description: "Vehicle trim name"
+      - name: year
+        description: "Model year"
+      - name: avg_price
+        description: "Average price for this group"
+      - name: price_rank
+        description: "Rank by price within country and model"
+      - name: price_diff_from_prev_year
+        description: "Price difference from previous year for same model"
+        
+  - name: tesla_condition_analysis
+    description: "Analysis of vehicle condition, accidents, and mileage"
+    columns:
+      - name: analysis_type
+        description: "Type of analysis being performed"
+      - name: dimension
+        description: "Main dimension being analyzed (age category, model, etc.)"
+      - name: total_vehicles
+        description: "Total number of vehicles in this group"
+      - name: accident_count
+        description: "Number of vehicles with accidents"
+      - name: accident_percentage
+        description: "Percentage of vehicles with accidents"
+        
+  - name: tesla_ownership_analysis
+    description: "Analysis of vehicle ownership patterns by price category"
+    columns:
+      - name: price_category
+        description: "Price category of the vehicle"
+      - name: vehicle_count
+        description: "Number of vehicles in this category"
+      - name: avg_price
+        description: "Average price in this category"
+      - name: avg_ownership_years
+        description: "Average years of ownership"
+      - name: avg_odometer
+        description: "Average odometer reading"
+      - name: accident_percentage
+        description: "Percentage of vehicles with accidents"

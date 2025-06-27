@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Raw data source from CSV files"
+    tables:
+      - name: tesla_results
+        description: "Tesla results data"
+        file_format: csv
+        path: "../tesla_results.csv"

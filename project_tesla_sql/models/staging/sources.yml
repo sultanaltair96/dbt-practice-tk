@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: tesla_data
+    schema: main
+    description: "Raw Tesla vehicle data from CSV file"
+    tables:
+      - name: tesla_results
+        description: "Raw Tesla vehicle inventory data"
+        columns:
+          - name: vin
+            description: "Vehicle Identification Number"
+          - name: model
+            description: "Tesla model code"
+          - name: year
+            description: "Model year"
+          - name: price
+            description: "Vehicle price"
+          - name: odometer
+            description: "Vehicle odometer reading"
+          - name: country
+            description: "Country where vehicle is located"
+          - name: vehicle_history
+            description: "Vehicle history information"

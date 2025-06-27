@@ -1,0 +1,43 @@
+[0m13:14:59.158803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F277A99FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2789226E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F278923CD0>]}
+
+
+============================== 13:14:59.278212 | d4811a66-cb98-4981-bc15-5db7d8c58d44 ==============================
+[0m13:14:59.278212 [info ] [MainThread]: Running with dbt=1.10.2
+[0m13:14:59.279211 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\tanis\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init tesla_project', 'send_anonymous_usage_stats': 'True'}
+[0m13:14:59.603205 [debug] [MainThread]: Starter project path: C:\Users\tanis\dbt-practice-tk\dbt-practice-tk\project_tesla_py\.venv\lib\site-packages\dbt\include\starter_project
+[0m13:14:59.650287 [info ] [MainThread]: 
+Your new dbt project "tesla_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:14:59.651884 [info ] [MainThread]: Setting up your profile.
+[0m13:15:05.216519 [debug] [MainThread]: Command `dbt init` succeeded at 13:15:05.216519 after 6.16 seconds
+[0m13:15:05.217518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F277A99FC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F2756B4EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F27A170D30>]}
+[0m13:15:05.217518 [debug] [MainThread]: Flushing usage events
+[0m13:15:05.641439 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:09:52.603170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002446415C070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244663CC3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244663CC1F0>]}
+
+
+============================== 14:09:52.608126 | 0f7a506c-05b4-4109-8fc7-28a8545150a7 ==============================
+[0m14:09:52.608126 [info ] [MainThread]: Running with dbt=1.10.2
+[0m14:09:52.609129 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\tanis\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:09:52.609129 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\tanis\dbt-practice-tk\dbt-practice-tk\project_tesla_py\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:09:52.610170 [debug] [MainThread]: Command `dbt run` failed at 14:09:52.610170 after 0.10 seconds
+[0m14:09:52.611202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002446415C070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244663CC4C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000244663CC490>]}
+[0m14:09:52.612126 [debug] [MainThread]: Flushing usage events
+[0m14:09:53.010569 [debug] [MainThread]: An error was encountered while trying to flush usage events

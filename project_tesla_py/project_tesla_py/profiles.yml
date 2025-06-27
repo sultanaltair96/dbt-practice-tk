@@ -1,0 +1,7 @@
+project_tesla_py:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: 'tesla_data.duckdb'  # This will create a local DuckDB database file
+      threads: 4
